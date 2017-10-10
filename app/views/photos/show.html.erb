@@ -1,6 +1,6 @@
-<div><h3>Title : <%= @photo.title %></h3></div>
-<div><h5>Date : <%= @photo.date%> </h5></div>
-<div><%= image_tag @photo.file_location.url, width: "300", class: "img-thumbmnail" %></div>
-<div><h5>Description : <%= simple_format(@photo.description) %></h5>></div>
+<div><h2>Title : <%= @photo.title %></h2></div>
+<div><h3>Date : <%= @photo.date%> </h3></div>
+<div><%= image_tag @photo.file_location.url, width: "80%", class: "img-thumbmnail" %></div>
+<div><h3>Description : <%= simple_format(@photo.description) %></h3></div>
 
-<%= link_to "Back to index" ,photos_path %>
+<%= link_to "Back to index" ,photos_path, class: "btn btn-default" %>

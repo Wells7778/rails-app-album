@@ -1,2 +1,27 @@
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+body {
+  padding-top: 72px;
+}
+.my-nav{
+  background: #5599FF;
+}
+
+.my-nav ul {
+  margin: 10px 0;
+}
+.my-nav li {
+  margin: 0 10px;
+}
+
+.my-brand {
+  font-size: 25px;
+}
+
+.my-photo{
+  padding-top: 10px;
+}
+
+.my-project {
+  margin-bottom: 15px;
+}
