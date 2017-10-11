@@ -1,9 +1,8 @@
 <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
   <% @photos.each do |photo| %>
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
       <div class="text-center"><h2><%= photo.title %></h2></div>
-      <div class="center-block"></div>
+      <div class="my-img center-block"><%= image_tag photo.file_location.url, size: "200", class: "img-thumbmnail center-block" %></div>
       <div class="center-block text-center">
           <%= link_to 'Show', photo_path(photo), class: "btn btn-default" %>
           <%= link_to 'Edit', edit_photo_path(photo), class: "btn btn-info" %>
@@ -11,7 +10,6 @@
       </div>
     </div>
   <% end %>
-  </div>
 </div>
 <hr>
-<%= link_to "New Photo", new_photo_path, class: "center-block btn btn-default" %>
+<%= link_to "New Photo", new_photo_path, class: "btn btn-default center-block", id: "my-new-btn" %>

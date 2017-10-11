@@ -4,7 +4,7 @@ body {
   padding-top: 72px;
 }
 .my-nav{
-  background: #5599FF;
+  /*background: #5599FF;*/
 }
 
 .my-nav ul {
@@ -18,10 +18,19 @@ body {
   font-size: 25px;
 }
 
-.my-photo{
+/*.my-photo{
   padding-top: 10px;
+}*/
+
+/*.my-project {
+  margin-bottom: 15px;
+}*/
+
+.my-img {
+  /*display: inline-block;*/
+  max-height: 100% ;
 }
 
-.my-project {
-  margin-bottom: 15px;
+#my-new-btn {
+  max-width: 25%;
 }
